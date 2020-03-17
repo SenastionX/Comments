@@ -1,0 +1,150 @@
+@fix-padding: 20px;
+@subtext-color: #7e7e7e;
+@button-color: #eee;
+@error-color: red;
+
+body {
+  padding: 0;
+}
+
+.title {
+  padding: 0 @fix-padding;
+}
+
+.published,
+time {
+  color: @subtext-color;
+}
+
+.content,
+.published,
+.comment-item {
+  padding-left: @fix-padding;
+}
+
+.avatar img,
+.username,
+time,
+.button {
+  display: block;
+  float: left;
+}
+
+.avatar img {
+  width: 138px;
+  height: 137px;
+  padding-right: @fix-padding;
+}
+
+.username,
+.answer,
+.open-comment,
+.hide-comment {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+time {
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.answer {
+  float: right;
+}
+
+.message {
+  clear: right;
+  padding: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+.comment-item {
+  padding-top: 10px;
+}
+
+.comment-item
+.comment-item {
+  padding-left: 156px;
+}
+
+.button {
+  background-color: @button-color;
+  padding: 5px 15px;
+  border: 1px solid #aeaeae;
+  margin-top: -1px;
+}
+
+span.button {
+  border-right-width: 0px;
+  border-left-width: 0px;
+}
+
+.plus {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.minus {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.open-comment,
+.hide-comment {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a.button {
+  text-decoration: none;
+  color: #000;
+}
+
+.comments-form {
+  border: 1px solid #aeaeae;
+  margin: 20px;
+  padding: @fix-padding;
+  padding-bottom: 40px;
+}
+
+  .form-title {
+    margin-top: -31px;
+    background: #fff;
+    width: 176px;
+    text-align: center;
+    padding-bottom: @fix-padding;
+  }
+
+  .comments-form label {
+    width: 200px;
+    position: relative;
+    display: block;
+    float: left;
+  }
+
+  .comments-form input {
+    width: 200px;
+  }
+
+  .comments-form textarea {
+    width: 400px;
+  }
+
+  .button_blue {
+    background: #1278a2;
+    color: #fff;
+    margin-left: 200px;
+    cursor: pointer;
+  }
+
+.error,
+.invalid.required {
+  border: 1px solid @error-color;
+}
+.error-message {
+  color: @error-color;
+}
